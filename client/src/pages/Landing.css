@@ -1,0 +1,39 @@
+* {
+  margin: none;
+  padding: none;
+  box-sizing: border-box;
+}
+
+#interview,
+#company {
+  height: calc(100vh - 60px);
+  object-fit: cover;
+  width: 100%;
+}
+
+#interview {
+  clip-path: polygon(15% 0%, 100% 0, 100% 100%, 0% 100%);
+}
+
+#company {
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  margin: -7px 0;
+}
+
+a {
+  color: inherit !important;
+  text-decoration: inherit !important;
+}
+
+@media only screen and (max-width: 1000px) {
+  .column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  #interview,
+  #company {
+    display: none !important;
+  }
+}
